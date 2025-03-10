@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>專業聊天框</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">ChatGPT 聊天室</div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <span class="bot-name">ChatGPT</span>
+                <p>你好！有什麼我可以幫助你的嗎？</p>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="輸入訊息..." autocomplete="off">
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
