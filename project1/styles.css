@@ -1,0 +1,126 @@
+/* 全局設置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* 聊天框主容器 */
+.chat-container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* 聊天框標題 */
+.chat-header {
+    background: #0078ff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 聊天內容區域 */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #0078ff #e0e0e0;
+}
+
+/* 美化滾動條 */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-box::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background: #0078ff;
+    border-radius: 10px;
+}
+
+/* 訊息框通用樣式 */
+.message {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* 使用者訊息 */
+.user-message {
+    background: #0078ff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+/* AI 訊息 */
+.bot-message {
+    background: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+/* AI 名稱 */
+.bot-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* 聊天輸入區 */
+.chat-input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+}
+
+/* 訊息輸入框 */
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* 送出按鈕 */
+#send-btn {
+    margin-left: 10px;
+    padding: 10px;
+    background: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#send-btn:hover {
+    background: #005ecb;
+}
